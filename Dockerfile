@@ -5,7 +5,7 @@ ENV SDK_TOOLS_VER=4333796 \
     APKTOOL_VER=2.3.3
 RUN mkdir -p /android-sdk && \
     apt-get update && \
-    apt-get install -y openjdk-8-jdk python-pip wget curl unzip zip bsdiff && \
+    apt-get install -y openjdk-8-jdk wget curl unzip zip bsdiff python3-pip python3-bcrypt python3-cffi && \
     wget -O /android-sdk/sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-$SDK_TOOLS_VER.zip && \
     unzip /android-sdk/sdk.zip -d /android-sdk && \
     rm -f /android-sdk/sdk.zip && \

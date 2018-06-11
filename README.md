@@ -4,7 +4,8 @@ Included softwares:
 
 * openjdk
 * apktools
-* python & pip
+* bsdiff
+* python3 & pip & python3-bcrypt & python3-cffi
 * android sdk manager & build tools
 
 This container can be used to repack and sign your own apks.
